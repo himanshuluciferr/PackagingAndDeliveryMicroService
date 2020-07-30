@@ -11,36 +11,23 @@ namespace PackagingAndDelivery.Controllers
     [ApiController]
     public class PackagingAndDeliveryController : ControllerBase
     {
-        // GET: api/PackagingAndDelivery
         [HttpGet]
-        public IEnumerable<string> Get()
+        public dynamic GetPackagingDeliveryCharge(string item, int count)
         {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET: api/PackagingAndDelivery/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST: api/PackagingAndDelivery
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT: api/PackagingAndDelivery/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            int charges = 0;
+            if(item.Equals("Integral"))
+            {
+                charges = 100 + 200;
+            }
+            else if(item.Equals("Accessory"))
+            {
+                charges = 50 + 100;
+            }
+            else
+            {
+                return BadRequest("Not a valid item or count");
+            }
+            return charges*count;
         }
     }
 }
