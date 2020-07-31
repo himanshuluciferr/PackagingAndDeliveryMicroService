@@ -12,26 +12,26 @@ namespace PackagingAndDelivery.Controllers
     public class PackagingAndDeliveryController : ControllerBase
     {
         [HttpGet]
-        public dynamic GetPackagingDeliveryCharge(string? item = null, int? count = null)
+        public dynamic GetPackagingDeliveryCharge(string item, int count)
         {
             int charges = 0;
-            if (item.Equals(null) || count.Equals(null))
+            if (item == null || count < 0)
             {
-                BadRequest("Input not valid");
+                return BadRequest("Input not valid");
             }
             else
             {
-                if (item.Equals("Integral") && count>=0)
+                if (item.Equals("Integral"))
                 {
-                    charges = 100 + 200;
+                    charges = 300;
                 }
-                else if (item.Equals("Accessory") && count >= 0)
+                else if (item.Equals("Accessory"))
                 {
-                    charges = 50 + 100;
+                    charges = 150;
                 }
                 else
                 {
-                    return BadRequest("Not a valid item or count");
+                    return BadRequest("Not a valid item");
                 }
             }
             return charges*count;
