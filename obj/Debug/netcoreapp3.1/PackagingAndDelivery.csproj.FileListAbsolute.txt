@@ -86,9 +86,14 @@ C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\ru\Micro
 C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.csproj.CoreCompileInputs.cache
-C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.csproj.CopyComplete
 C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.dll
 C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.pdb
 C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.genruntimeconfig.cache
+C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.MvcApplicationPartsAssemblyInfo.cache
