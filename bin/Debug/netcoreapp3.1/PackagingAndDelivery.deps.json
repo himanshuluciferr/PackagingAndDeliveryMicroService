@@ -29,6 +29,7 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.8",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
           "Swashbuckle.AspNetCore": "5.5.1",
+          "Threenine.LinqToCsv": "1.6.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -2002,6 +2003,17 @@
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0",
           "System.Xml.XPath": "4.3.0"
+        }
+      },
+      "Threenine.LinqToCsv/1.6.0": {
+        "runtime": {
+          "lib/netstandard2.0/LINQtoCSV.dll": {
+            "assemblyVersion": "1.6.0.0",
+            "fileVersion": "1.6.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/LINQtoCSV.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4650,6 +4662,13 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Threenine.LinqToCsv/1.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-13P/4as7uN39me1qZUmYCSphq4MdjUG90anak7CbNhOGh5tYPlFlDCBYnO0mFFdGFhVv+OoU7yA0vAnc9y8uDg==",
+      "path": "threenine.linqtocsv/1.6.0",
+      "hashPath": "threenine.linqtocsv.1.6.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

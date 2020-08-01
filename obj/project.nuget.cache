@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GPYarJdr4ueP836xY48Fj1cVUKnrUoaBeeTfxnghpeCtdbiranwytoMMwvI2dYxLoKrv13Wh7VyXn7cYpX7BQQ==",
+  "dgSpecHash": "a+GFVi2CLvGHKmBQpewodIxGk2qYvU5si1rmUJqrTcxOPhhgBJAZE5CR7uUukM8XS3vlZ8BmhmNSe+1Middcuw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\PackagingAndDelivery\\PackagingAndDelivery.csproj",
   "expectedPackageFiles": [
@@ -146,7 +146,8 @@
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xmldocument\\4.0.1\\system.xml.xmldocument.4.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\threenine.linqtocsv\\1.6.0\\threenine.linqtocsv.1.6.0.nupkg.sha512"
   ],
   "logs": []
 }

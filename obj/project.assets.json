@@ -2459,6 +2459,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Threenine.LinqToCsv/1.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/LINQtoCSV.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/LINQtoCSV.dll": {}
+        }
       }
     }
   },
@@ -7920,6 +7929,18 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Threenine.LinqToCsv/1.6.0": {
+      "sha512": "13P/4as7uN39me1qZUmYCSphq4MdjUG90anak7CbNhOGh5tYPlFlDCBYnO0mFFdGFhVv+OoU7yA0vAnc9y8uDg==",
+      "type": "package",
+      "path": "threenine.linqtocsv/1.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/LINQtoCSV.dll",
+        "threenine.linqtocsv.1.6.0.nupkg.sha512",
+        "threenine.linqtocsv.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -7928,7 +7949,8 @@
       "Microsoft.Extensions.Logging.Log4Net.AspNetCore >= 3.1.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
-      "Swashbuckle.AspNetCore >= 5.5.1"
+      "Swashbuckle.AspNetCore >= 5.5.1",
+      "Threenine.LinqToCsv >= 1.6.0"
     ]
   },
   "packageFolders": {
@@ -7987,6 +8009,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.5.1, )"
+          },
+          "Threenine.LinqToCsv": {
+            "target": "Package",
+            "version": "[1.6.0, )"
           }
         },
         "imports": [

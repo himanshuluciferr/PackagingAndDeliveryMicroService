@@ -57,6 +57,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.5.1, )"
+            },
+            "Threenine.LinqToCsv": {
+              "target": "Package",
+              "version": "[1.6.0, )"
             }
           },
           "imports": [

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PackagingAndDelivery.Models;
+using LINQtoCSV;
 
 namespace PackagingAndDelivery.Controllers
 {
@@ -17,27 +19,30 @@ namespace PackagingAndDelivery.Controllers
         public dynamic GetPackagingDeliveryCharge(string item, int count)
         {
             _log4net.Info("GetPackagingDeliveryCharge() called");
-            int charges = 0;
-            if (item == null || count <= 0)
+            if(count <= 0)
             {
-                return BadRequest("Input not valid");
+                return BadRequest("Count not valid");
             }
-            else
+            var CSVFile = new CsvFileDescription
             {
-                if (item.Equals("Integral"))
-                {
-                    charges = 300;
-                }
-                else if (item.Equals("Accessory"))
-                {
-                    charges = 150;
-                }
-                else
-                {
-                    return BadRequest("Not a valid item");
-                }
+                SeparatorChar = ',',
+                FirstLineHasColumnNames = true
+            };
+            int Charge = 0;
+            var CSV = new CsvContext();
+            var Charges = from values in CSV.Read<Item>(@"./Items.csv", CSVFile)
+                          where (values.ItemType == item)
+                          select new
+                          {
+                              DeliveryCharge = values.Delivery,
+                              PackagingCharge = values.Packaging
+                          };
+            var Fee = Charges.Select(x => x.DeliveryCharge + x.PackagingCharge).ToList();
+            foreach(int value in Fee)
+            {
+                Charge += value;
             }
-            return charges*count;
+            return Charge * count;
         }
     }
 }
