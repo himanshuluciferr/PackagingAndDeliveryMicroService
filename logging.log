@@ -117,3 +117,12 @@ INFO  11:10:38 GetPackagingDeliveryCharge() called
 INFO  11:10:38 GetPackagingDeliveryCharge() called
 INFO  11:10:59 GetPackagingDeliveryCharge() called
 INFO  11:11:11 GetPackagingDeliveryCharge() called
+INFO  11:15:04 Application started. Press Ctrl+C to shut down.
+INFO  11:15:04 Application started. Press Ctrl+C to shut down.
+INFO  11:15:04 Hosting environment: Development
+INFO  11:15:04 Hosting environment: Development
+INFO  11:15:04 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  11:15:04 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  11:15:05 GetPackagingDeliveryCharge() called
+INFO  11:15:10 GetPackagingDeliveryCharge() called
+INFO  11:15:16 GetPackagingDeliveryCharge() called
