@@ -10,12 +10,13 @@ using LINQtoCSV;
 
 namespace PackagingAndDelivery.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
-    public class PackagingAndDeliveryController : ControllerBase
+    public class GetPackagingDeliveryChargeController : ControllerBase
     {
-        static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(PackagingAndDeliveryController));
+        static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(GetPackagingDeliveryChargeController));
         [HttpGet]
+        [ActionName("GetPackagingDeliveryCharge")]
         public dynamic GetPackagingDeliveryCharge(string item, int count)
         {
             _log4net.Info("GetPackagingDeliveryCharge() called");
@@ -31,13 +32,13 @@ namespace PackagingAndDelivery.Controllers
             int Charge = 0;
             var CSV = new CsvContext();
             var Charges = from values in CSV.Read<Item>(@"./Items.csv", CSVFile)
-                          where (values.ItemType == item)
+                          where (values.ItemType.Trim().ToUpper() == item.ToUpper())
                           select new
                           {
                               DeliveryCharge = values.Delivery,
                               PackagingCharge = values.Packaging
                           };
-            var Fee = Charges.Select(x => x.DeliveryCharge + x.PackagingCharge).ToList();
+            var Fee = Charges.Select(charge => charge.DeliveryCharge + charge.PackagingCharge).ToList();
             foreach(int value in Fee)
             {
                 Charge += value;

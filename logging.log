@@ -126,3 +126,47 @@ INFO  11:15:04 Content root path: C:\Users\user\source\repos\PackagingAndDeliver
 INFO  11:15:05 GetPackagingDeliveryCharge() called
 INFO  11:15:10 GetPackagingDeliveryCharge() called
 INFO  11:15:16 GetPackagingDeliveryCharge() called
+INFO  03:42:01 Application started. Press Ctrl+C to shut down.
+INFO  03:42:02 Application started. Press Ctrl+C to shut down.
+INFO  03:42:02 Hosting environment: Development
+INFO  03:42:02 Hosting environment: Development
+INFO  03:42:02 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  03:42:02 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  03:42:03 GetPackagingDeliveryCharge() called
+INFO  03:42:03 GetPackagingDeliveryCharge() called
+INFO  03:42:48 GetPackagingDeliveryCharge() called
+INFO  03:43:20 GetPackagingDeliveryCharge() called
+INFO  03:43:25 GetPackagingDeliveryCharge() called
+INFO  03:43:39 GetPackagingDeliveryCharge() called
+INFO  03:43:44 GetPackagingDeliveryCharge() called
+INFO  03:43:48 GetPackagingDeliveryCharge() called
+INFO  03:43:58 GetPackagingDeliveryCharge() called
+INFO  03:44:08 GetPackagingDeliveryCharge() called
+INFO  03:44:27 GetPackagingDeliveryCharge() called
+INFO  04:18:25 Application started. Press Ctrl+C to shut down.
+INFO  04:18:25 Application started. Press Ctrl+C to shut down.
+INFO  04:18:25 Hosting environment: Development
+INFO  04:18:25 Hosting environment: Development
+INFO  04:18:25 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  04:18:25 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  04:18:26 GetPackagingDeliveryCharge() called
+INFO  04:18:30 GetPackagingDeliveryCharge() called
+INFO  04:18:37 GetPackagingDeliveryCharge() called
+INFO  04:19:59 GetPackagingDeliveryCharge() called
+INFO  04:20:30 GetPackagingDeliveryCharge() called
+INFO  04:42:17 Application started. Press Ctrl+C to shut down.
+INFO  04:42:17 Application started. Press Ctrl+C to shut down.
+INFO  04:42:17 Hosting environment: Development
+INFO  04:42:17 Hosting environment: Development
+INFO  04:42:17 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  04:42:17 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  04:42:18 GetPackagingDeliveryCharge() called
+INFO  04:42:18 GetPackagingDeliveryCharge() called
+INFO  04:43:17 Application started. Press Ctrl+C to shut down.
+INFO  04:43:17 Application started. Press Ctrl+C to shut down.
+INFO  04:43:17 Hosting environment: Development
+INFO  04:43:17 Hosting environment: Development
+INFO  04:43:17 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  04:43:17 Content root path: C:\Users\user\source\repos\PackagingAndDelivery
+INFO  04:43:17 GetPackagingDeliveryCharge() called
+INFO  04:43:30 GetPackagingDeliveryCharge() called
