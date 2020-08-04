@@ -16,5 +16,11 @@
     <PackageReference Include="Threenine.LinqToCsv" Version="1.6.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="PackagingAndDeliverydepl.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 
 </Project>
