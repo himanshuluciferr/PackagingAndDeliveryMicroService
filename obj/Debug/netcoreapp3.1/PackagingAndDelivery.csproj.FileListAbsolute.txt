@@ -110,3 +110,4 @@ C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\LINQtoCS
 C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\user\source\repos\PackagingAndDelivery\obj\Debug\netcoreapp3.1\PackagingAndDelivery.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\source\repos\PackagingAndDelivery\bin\Debug\netcoreapp3.1\PackagingAndDeliverydepl.yaml
