@@ -844,3 +844,12 @@ INFO  01:19:47 Content root path: C:\Users\user\OneDrive\Desktop\Return Order Ma
 INFO  01:19:48 GetPackagingDeliveryCharge() called
 INFO  01:19:48 GetPackagingDeliveryCharge() called
 INFO  01:19:51 GetPackagingDeliveryCharge() called
+INFO  01:44:37 Application started. Press Ctrl+C to shut down.
+INFO  01:44:37 Application started. Press Ctrl+C to shut down.
+INFO  01:44:37 Hosting environment: Development
+INFO  01:44:37 Hosting environment: Development
+INFO  01:44:37 Content root path: C:\Users\user\OneDrive\Desktop\Return Order Management\Packaging-and-Delivery
+INFO  01:44:37 Content root path: C:\Users\user\OneDrive\Desktop\Return Order Management\Packaging-and-Delivery
+INFO  01:44:38 GetPackagingDeliveryCharge() called
+INFO  01:44:38 GetPackagingDeliveryCharge() called
+INFO  01:44:50 GetPackagingDeliveryCharge() called

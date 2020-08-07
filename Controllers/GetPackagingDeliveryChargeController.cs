@@ -16,8 +16,8 @@ namespace PackagingAndDelivery.Controllers
     [ApiController]
     public class GetPackagingDeliveryChargeController : ControllerBase
     {
-        private readonly IOptions<Item> appSettings;
-        public GetPackagingDeliveryChargeController(IOptions<Item> app)
+        private readonly IOptions<CSV> appSettings;
+        public GetPackagingDeliveryChargeController(IOptions<CSV> app)
         {
             appSettings = app;
         }
@@ -29,10 +29,12 @@ namespace PackagingAndDelivery.Controllers
         {
             _log4net.Info("GetPackagingDeliveryCharge() called");
             int Charge = 0;
+           
             if (count <= 0)
             {
                 return BadRequest("Invalid Count");
             }
+            /*
             else if(item.Trim().ToUpper() == appSettings.Value.ItemType1.ToUpper())
             {
                 Charge = appSettings.Value.Packaging1 + appSettings.Value.Delivery1;
@@ -43,8 +45,7 @@ namespace PackagingAndDelivery.Controllers
             }
             
             return Charge*count;
-
-            /*
+            */
             var CSVFile = new CsvFileDescription
             {
                 SeparatorChar = ',',
@@ -52,7 +53,7 @@ namespace PackagingAndDelivery.Controllers
             };
             
             var CSV = new CsvContext();
-            var Charges = from values in CSV.Read<Item>("Items.csv", CSVFile)
+            var Charges = from values in CSV.Read<Item>(appSettings.Value.Path, CSVFile)
                           where (values.ItemType.Trim().ToUpper() == item.ToUpper())
                           select new
                           {
@@ -64,7 +65,7 @@ namespace PackagingAndDelivery.Controllers
             {
                 Charge += value;
             }
-            */
+            return Charge * count;
         }
     }
 }
