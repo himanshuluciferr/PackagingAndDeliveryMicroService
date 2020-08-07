@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PackagingAndDelivery.Models;
 using LINQtoCSV;
-using PackagingAndDelivery.Repository;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace PackagingAndDelivery.Controllers
 {
@@ -15,28 +16,55 @@ namespace PackagingAndDelivery.Controllers
     [ApiController]
     public class GetPackagingDeliveryChargeController : ControllerBase
     {
-        public ICharges _context;
-        public GetPackagingDeliveryChargeController(ICharges context)
+        private readonly IOptions<Item> appSettings;
+        public GetPackagingDeliveryChargeController(IOptions<Item> app)
         {
-            this._context = context;
+            appSettings = app;
         }
         static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(GetPackagingDeliveryChargeController));
         [HttpGet]
         [ActionName("GetPackagingDeliveryCharge")]
-
+        
         public dynamic GetPackagingDeliveryCharge(string item, int count)
         {
             _log4net.Info("GetPackagingDeliveryCharge() called");
-            dynamic charges = _context.GetPackagingDeliveryCharge(item, count);
-            if (charges == -1)
+            int Charge = 0;
+            if (count <= 0)
             {
-                return BadRequest("Count not valid"); 
+                return BadRequest("Invalid Count");
             }
-            else
+            else if(item.Trim().ToUpper() == appSettings.Value.ItemType1.ToUpper())
             {
-                return charges;
+                Charge = appSettings.Value.Packaging1 + appSettings.Value.Delivery1;
             }
+            else if (item.Trim().ToUpper() == appSettings.Value.ItemType2.ToUpper())
+            {
+                Charge = appSettings.Value.Packaging2 + appSettings.Value.Delivery2;
+            }
+            
+            return Charge*count;
+
+            /*
+            var CSVFile = new CsvFileDescription
+            {
+                SeparatorChar = ',',
+                FirstLineHasColumnNames = true
+            };
+            
+            var CSV = new CsvContext();
+            var Charges = from values in CSV.Read<Item>("Items.csv", CSVFile)
+                          where (values.ItemType.Trim().ToUpper() == item.ToUpper())
+                          select new
+                          {
+                              DeliveryCharge = values.Delivery,
+                              PackagingCharge = values.Packaging
+                          };
+            var Fee = Charges.Select(charge => charge.DeliveryCharge + charge.PackagingCharge).ToList();
+            foreach (int value in Fee)
+            {
+                Charge += value;
+            }
+            */
         }
-        
     }
 }

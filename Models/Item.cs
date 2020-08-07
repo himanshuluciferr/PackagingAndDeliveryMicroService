@@ -8,11 +8,11 @@ namespace PackagingAndDelivery.Models
 {
     public class Item
     {
-        [CsvColumn(FieldIndex = 1)]
-        public string ItemType { get; set; }
-        [CsvColumn(FieldIndex = 2)]
-        public int Packaging { get; set; }
-        [CsvColumn(FieldIndex = 3)]
-        public int Delivery { get; set; }
+        public string ItemType1 { get; set; }
+        public int Packaging1 { get; set; }
+        public int Delivery1 { get; set; }
+        public string ItemType2 { get; set; }
+        public int Packaging2 { get; set; }
+        public int Delivery2 { get; set; }
     }
 }
