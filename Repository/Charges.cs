@@ -24,7 +24,7 @@ namespace PackagingAndDelivery.Repository
             };
             int Charge = 0;
             var CSV = new CsvContext();
-            var Charges = from values in CSV.Read<Item>(@"./bin/Debug/netcoreapp3.1/Items.csv", CSVFile)
+            var Charges = from values in CSV.Read<Item>(@"Items.csv", CSVFile)
                           where (values.ItemType.Trim().ToUpper() == item.ToUpper())
                           select new
                           {

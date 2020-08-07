@@ -17,6 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Items.csv">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
     <None Update="PackagingAndDeliverydepl.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
