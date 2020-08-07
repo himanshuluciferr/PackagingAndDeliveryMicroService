@@ -28,47 +28,20 @@ namespace PackagingAndDelivery.Controllers
         public dynamic GetPackagingDeliveryCharge(string item, int count)
         {
             _log4net.Info("GetPackagingDeliveryCharge() called");
-
+            int Charges = 0;
             if (count <= 0)
             {
-                return BadRequest("Invalid Count");
+                return BadRequest("Invalid quantity");
             }
-            else
+            else if(item.Trim().ToUpper() == "INTEGRAL")
             {
-
-                List<Item> items = new List<Item>();
-                try
-                {
-                    string path = configuration.GetValue<string>("Items:Path");
-                    using (StreamReader sr = new StreamReader(path))
-                    {
-                        string line;
-                        while ((line = sr.ReadLine()) != null)
-                        {
-                            string[] ItemList = line.Split(",");
-                            items.Add(new Item() { ItemType = ItemList[0], Packaging = Convert.ToInt32(ItemList[1]), Delivery = Convert.ToInt32(ItemList[2]) });
-                        }
-                    }
-                }
-                catch (NullReferenceException)
-                {
-                    return null;
-                }
-                int Charge = 0;
-                var Charges = from values in items
-                              where (values.ItemType.Trim().ToUpper() == item.ToUpper())
-                              select new
-                              {
-                                  DeliveryCharge = values.Delivery,
-                                  PackagingCharge = values.Packaging
-                              };
-                var Fee = Charges.Select(charge => charge.DeliveryCharge + charge.PackagingCharge).ToList();
-                foreach (int value in Fee)
-                {
-                    Charge += value;
-                }
-                return Charge * count;
+                Charges = 300;
             }
+            else if(item.Trim().ToUpper() == "ACCESSORY")
+            {
+                Charges = 150;
+            }
+            return Charges * count;
         }
     }
 }

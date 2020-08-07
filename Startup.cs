@@ -33,11 +33,6 @@ namespace PackagingAndDelivery
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Packaging & Delivery", Version = "v1" });
             });
-
-            //services.Configure<CSV>(Configuration.GetSection("CSVFile"));
-
-            //services.Configure<Item>(Configuration.GetSection("Accessory"));
-            //services.AddScoped<ICharges, Charges>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

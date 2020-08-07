@@ -11,10 +11,5 @@ namespace PackagingAndDelivery.Models
         public string ItemType { get; set; }
         public int Packaging { get; set; }
         public int Delivery { get; set; }
-        /*
-        public string ItemType2 { get; set; }
-        public int Packaging2 { get; set; }
-        public int Delivery2 { get; set; }
-        */
     }
 }
