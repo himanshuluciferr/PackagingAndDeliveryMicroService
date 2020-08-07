@@ -734,3 +734,22 @@ System.InvalidOperationException: Unable to resolve service for type 'PackagingA
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  10:22:37 Application started. Press Ctrl+C to shut down.
+INFO  10:22:38 Application started. Press Ctrl+C to shut down.
+INFO  10:22:38 Hosting environment: Development
+INFO  10:22:38 Hosting environment: Development
+INFO  10:22:38 Content root path: C:\Users\user\OneDrive\Desktop\Return Order Management\Packaging-and-Delivery
+INFO  10:22:38 Content root path: C:\Users\user\OneDrive\Desktop\Return Order Management\Packaging-and-Delivery
+INFO  10:22:39 GetPackagingDeliveryCharge() called
+INFO  10:22:39 GetPackagingDeliveryCharge() called
+INFO  09:37:40 Application started. Press Ctrl+C to shut down.
+INFO  09:37:41 Application started. Press Ctrl+C to shut down.
+INFO  09:37:41 Hosting environment: Development
+INFO  09:37:41 Hosting environment: Development
+INFO  09:37:41 Content root path: C:\Users\user\OneDrive\Desktop\Return Order Management\Packaging-and-Delivery
+INFO  09:37:41 Content root path: C:\Users\user\OneDrive\Desktop\Return Order Management\Packaging-and-Delivery
+INFO  09:37:42 GetPackagingDeliveryCharge() called
+INFO  09:37:42 GetPackagingDeliveryCharge() called
+INFO  09:37:49 GetPackagingDeliveryCharge() called
+INFO  09:37:54 GetPackagingDeliveryCharge() called
+INFO  09:37:59 GetPackagingDeliveryCharge() called
